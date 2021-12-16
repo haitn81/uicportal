@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MOT_VIEW" pageWidth="600" pageHeight="800" columnWidth="600" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="b7763a4b-0e56-4437-bced-8776bdac740c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="435"/>
+	<parameter name="SoBaoHiem" class="java.lang.String"/>
+	<parameter name="DiaChiChuXe" class="java.lang.String"/>
+	<parameter name="DienThoaiChuXe" class="java.lang.String"/>
+	<parameter name="EmailChuXe" class="java.lang.String"/>
+	<parameter name="DiaChiBenMuaBaoHiem" class="java.lang.String"/>
+	<parameter name="DienThoaiBenMuaBaoHiem" class="java.lang.String"/>
+	<parameter name="EmailBenMuaBaoHiem" class="java.lang.String"/>
+	<parameter name="SoBienKiemSoat" class="java.lang.String"/>
+	<parameter name="LoaiXe" class="java.lang.String"/>
+	<parameter name="SoKhung" class="java.lang.String"/>
+	<parameter name="SoMay" class="java.lang.String"/>
+	<parameter name="DungTichDongCo" class="java.lang.String"/>
+	<parameter name="THBHTu" class="java.lang.String"/>
+	<parameter name="THBHDen" class="java.lang.String"/>
+	<parameter name="PhiBaoHiem" class="java.lang.String"/>
+	<parameter name="ThueGTGT" class="java.lang.String"/>
+	<parameter name="TongPhiBaoHiem" class="java.lang.String"/>
+	<parameter name="ThoiHanThanhToanPhiBaoHiem" class="java.lang.String"/>
+	<parameter name="NgayCapBaoHiem" class="java.lang.String"/>
+	<parameter name="ThangCapBaoHiem" class="java.lang.String"/>
+	<parameter name="NamCapBaoHiem" class="java.lang.String"/>
+	<parameter name="QRCode" class="Object"/>
+	<parameter name="Logo" class="Object"/>
+	<parameter name="Barcode" class="Object"/>
+	<parameter name="SoChoNgoi" class="java.lang.String"/>
+	<parameter name="TrongTai" class="java.lang.String"/>
+	<parameter name="MucDichSuDung" class="java.lang.String"/>
+	<parameter name="useTNDSHK" class="java.lang.Boolean"/>
+	<parameter name="HoTenBenMuaBaoHiem" class="java.lang.String"/>
+	<parameter name="HoTenChuXe" class="java.lang.String"/>
+	<parameter name="HmtnNguoi" class="java.lang.String"/>
+	<parameter name="HmtnTaisan" class="java.lang.String"/>
+	<parameter name="HmtnHanhKhach" class="java.lang.String"/>
+	<parameter name="NhanHieuXe" class="java.lang.String"/>
+	<parameter name="SoSdbs" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="800" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="5" y="5" width="590" height="790" forecolor="#293C57" uuid="61bee8f9-6684-4a81-9e2e-7927896ed4db"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="10" y="10" width="580" height="780" backcolor="#FAFAE6" uuid="dfc389ff-b569-4921-9205-57ca62529dc4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement x="197" y="310" width="200" height="200" uuid="d56cecb7-b01e-4932-a5a8-9e972c331b8a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{QRCode}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="15" y="560" width="570" height="30" forecolor="#06215C" uuid="b53d0b64-6474-4a05-8dd1-6782cd5423a2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tầng 9, toà nhà TungShing Square, 2 Ngô Quyền, Hoàn Kiếm, Hà Nội. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="620" width="570" height="30" forecolor="#06215C" uuid="ca688287-bc28-497c-8dbd-177fe3c9f60f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Tầng L16, Vincom Center, 72 Lê Thánh Tôn, Quận 1, TP Hồ Chí Minh ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="15" y="680" width="585" height="30" forecolor="#06215C" uuid="802b791f-8928-4533-8957-a96b57f93a34">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Tầng 6, Tòa nhà Bưu điện, 271 Nguyễn Văn Linh, Thanh Khê, TP Đà Nẵng ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="754" width="159" height="30" forecolor="#06215C" uuid="fb5444b1-2aa4-4e41-9d49-4c64afb5b501"/>
+				<textElement verticalAlignment="Middle">
+					<font size="17"/>
+				</textElement>
+				<text><![CDATA[Tổng đài liên lạc: ]]></text>
+			</staticText>
+			<image scaleImage="RealSize" hAlign="Right" vAlign="Bottom">
+				<reportElement x="426" y="729" width="160" height="60" uuid="6d214da6-53a2-462e-adda-5430c3f71114">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{Barcode}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="110" y="15" width="390" height="30" forecolor="#293C57" uuid="6cc25c11-71bd-4d7a-ad3e-eb12953b33b5"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Công ty Bảo hiểm Liên hiệp]]></text>
+			</staticText>
+			<image>
+				<reportElement x="240" y="84" width="120" height="80" uuid="9135226c-0fd5-42c2-a312-0262dfca15ec">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{Logo}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="15" y="240" width="570" height="35" forecolor="#06215C" uuid="8867723c-1787-4e77-8426-bc92112b0141"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CỦA CHỦ XE CƠ GIỚI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="210" width="570" height="35" forecolor="#06215C" uuid="03a5b3e6-11f8-4982-b00d-c3add1c4f336"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BẢO HIỂM BẮT BUỘC TRÁCH NHIỆM DÂN SỰ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="180" width="570" height="35" forecolor="#06215C" uuid="74503406-26b4-489c-92d1-81ccb866bbfc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GIẤY CHỨNG NHẬN]]></text>
+			</staticText>
+			<break>
+				<reportElement x="0" y="789" width="98" height="1" uuid="84fa8b00-b79b-46d4-bf97-3ecf4bbbb685"/>
+			</break>
+			<staticText>
+				<reportElement x="15" y="530" width="570" height="30" forecolor="#06215C" uuid="eec2b84b-8d00-4d47-ade5-28a43e173ace">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Trụ sở chính:
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="590" width="570" height="30" forecolor="#06215C" uuid="9172af6b-80e7-4c3d-a415-84af1f8853d2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Chi nhánh tại TP Hồ Chí Minh:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="650" width="570" height="30" forecolor="#06215C" uuid="f9041fe4-a072-4b5b-a672-cb3ccc14f124">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Chi nhánh tại Đà Nẵng:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="754" width="110" height="30" forecolor="#06215C" uuid="6effeb63-a494-4e1c-a55e-4ed9f16d1075"/>
+				<textElement verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1900545585]]></text>
+			</staticText>
+		</band>
+		<band height="800">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="5" y="5" width="590" height="790" forecolor="#293C57" uuid="5e8afda6-f07c-4d8c-a5b2-b34e99c6d0a9"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="10" y="10" width="580" height="780" backcolor="#FAFAE6" uuid="b5a4dcd0-a84e-4a5b-a639-b8ad8ea566d2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="117" y="126" width="150" height="28" forecolor="#06215C" uuid="6ceeb8c4-55a1-4a3f-a324-798309d44aa5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DienThoaiChuXe}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="15" y="187" width="568" height="28" forecolor="#06215C" uuid="a6ac0e0e-3948-4d38-a2ef-1d9844ddba54"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DiaChiBenMuaBaoHiem}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="118" y="215" width="150" height="28" forecolor="#06215C" uuid="b8655965-8c80-4649-a16d-0182cfee35e7"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DienThoaiBenMuaBaoHiem}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="10" y="246" width="580" height="30" backcolor="#F2F3F2" uuid="9f369d09-4931-4ed9-97cd-3599c529f374">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[THÔNG TIN VỀ XE CƠ GIỚI]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="15" y="99" width="571" height="28" forecolor="#06215C" uuid="28edaf1b-63c8-4670-8591-0690ef78c57d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DiaChiChuXe}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="266" y="215" width="104" height="28" forecolor="#06215C" uuid="2ad3e038-9326-4f46-8dd6-2f6c5f462644">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Email:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="329" y="126" width="256" height="28" forecolor="#06215C" uuid="c0f15c4f-1815-4216-aeab-833d41f68fcf"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{EmailChuXe}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="328" y="215" width="257" height="28" forecolor="#06215C" uuid="62fc779e-cb01-4a4a-9268-fc5a611b6641"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{EmailBenMuaBaoHiem}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="15" y="126" width="159" height="28" forecolor="#06215C" uuid="a390d136-de04-4765-87d5-cffa2173a5de">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Điện thoại:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="15" y="10" width="531" height="32" forecolor="#06215C" uuid="26c398f0-f036-442f-a4e0-008f40737f40"/>
+				<textElement verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SoBaoHiem}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="266" y="126" width="92" height="28" forecolor="#06215C" uuid="72e6a06b-ff74-422d-9b0e-76492a655f17">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Email:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="15" y="215" width="124" height="28" forecolor="#06215C" uuid="409971d9-ef54-493a-9fd0-000e6ddac99b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Điện thoại:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="15" y="276" width="179" height="30" forecolor="#06215C" uuid="dec63147-0c96-455d-a895-5988e1313ee7">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Biển kiểm soát:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="15" y="396" width="411" height="30" forecolor="#06215C" uuid="86e90e6b-ca72-4e46-b917-77944d4db326"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SoMay}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="153" y="276" width="427" height="30" forecolor="#06215C" uuid="2ba951d0-82b5-4dd1-8108-c16b9c8f8806"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SoBienKiemSoat}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="15" y="366" width="411" height="30" forecolor="#06215C" uuid="7545ec1c-9ede-4735-88c3-c7376c6693f1"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SoKhung}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="87" y="306" width="493" height="30" forecolor="#06215C" uuid="daee7b7d-0802-428d-81e2-01ee53566962"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LoaiXe}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="15" y="306" width="89" height="30" forecolor="#06215C" uuid="2cee0240-890e-4824-ba70-18b7664d47d8">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Loại xe:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="401" y="366" width="180" height="30" forecolor="#06215C" uuid="a8507ab5-fc53-49ad-b22d-6abc4181a37e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SoChoNgoi}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="401" y="396" width="185" height="30" forecolor="#06215C" uuid="43f9daa2-11e2-4f40-95ba-bbddaa1211ed"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TrongTai}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="189" y="426" width="373" height="30" forecolor="#06215C" uuid="d936cf49-f33b-4670-a72a-4ab2aba9aea8"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{MucDichSuDung}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="15" y="426" width="236" height="30" forecolor="#06215C" uuid="a47d7038-6f3f-4236-9297-e172f3e6a68b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Mục đích sử dụng:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="41" y="552" width="153" height="30" forecolor="#06215C" uuid="6241bab0-3e71-4db1-9ede-949e87acbdf5">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isItalic="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Về tài sản: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="41" y="522" width="133" height="30" forecolor="#06215C" uuid="3fc11ed1-b52e-420e-bcf3-aefaa0757a65">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isItalic="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Về người: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="15" y="491" width="570" height="30" forecolor="#06215C" uuid="9d874adf-5457-4ab1-ad2c-1ca7cdfb8fa6">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isBold="true" isItalic="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Mức trách nhiệm dân sự đối với người thứ ba]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="10" y="461" width="580" height="30" backcolor="#F2F3F2" uuid="7708fcb6-92e3-4981-82ea-55d60663005e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[BẢO HIỂM BẮT BUỘC TRÁCH NHIỆM DÂN SỰ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="15" y="582" width="570" height="30" forecolor="#06215C" uuid="9273cf53-04b3-4672-94dd-42c5db68dd11">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<printWhenExpression><![CDATA[$P{useTNDSHK}]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isBold="true" isItalic="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Mức trách nhiệm dân sự đối với hành khách]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="41" y="612" width="133" height="30" forecolor="#06215C" uuid="c7eb1df0-2708-41d0-b116-db02cb69bf00">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<printWhenExpression><![CDATA[$P{useTNDSHK}]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isItalic="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Về người: ]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="10" y="157" width="580" height="30" backcolor="#F2F3F2" uuid="e5833186-67d7-45f9-bb85-884ff3c0c276"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HoTenBenMuaBaoHiem}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="10" y="70" width="580" height="30" backcolor="#F2F3F2" uuid="b151d555-c507-447d-a8c8-4dd1e51908b2"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HoTenChuXe}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="138" y="522" width="436" height="30" forecolor="#06215C" uuid="e5792db7-bd0b-4d6d-94d5-1b22ece0da6a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HmtnNguoi}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="146" y="552" width="432" height="30" forecolor="#06215C" uuid="77c49b51-0af8-4acf-8141-5b41d2d8f8ce"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HmtnTaisan}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="137" y="612" width="444" height="30" forecolor="#06215C" uuid="dccd08f0-caab-4ae1-b1c0-d4f112f763e0">
+					<printWhenExpression><![CDATA[$P{useTNDSHK}]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HmtnHanhKhach}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="15" y="336" width="568" height="30" forecolor="#06215C" uuid="36072e0e-c17d-4bf0-b0e9-cb7d6e159030"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NhanHieuXe}]]></textFieldExpression>
+			</textField>
+			<break>
+				<reportElement x="0" y="789" width="100" height="1" uuid="35580999-401f-433b-80c4-e3b32831a8ac"/>
+			</break>
+			<textField isBlankWhenNull="true">
+				<reportElement x="18" y="41" width="528" height="28" forecolor="#FF3366" uuid="e4281356-a099-4548-a85f-413a412c4903"/>
+				<textElement verticalAlignment="Middle">
+					<font size="18" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SoSdbs}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="800">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="5" y="5" width="590" height="790" forecolor="#293C57" uuid="66a765d7-9738-41c7-922d-2ffa1fb2eba5"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="10" y="10" width="580" height="780" backcolor="#FAFAE6" uuid="556070db-77dd-45d9-99af-b40aa54ff5c2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Opaque" x="10" y="15" width="580" height="30" backcolor="#F2F3F2" uuid="ec31d70a-8606-4544-9a1b-8d42b4a8667d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[THỜI HẠN BẢO HIỂM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="10" y="170" width="580" height="30" backcolor="#F2F3F2" uuid="9d5f69e8-00e5-4550-96ae-202bd647f746">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[TỔNG PHÍ BẢO HIỂM VÀ THỜI HẠN THANH TOÁN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="210" width="179" height="30" forecolor="#06215C" uuid="a8ae1988-2630-492d-bf25-3a339fe54ae8">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isItalic="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Phí bảo hiểm:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="292" y="210" width="134" height="30" forecolor="#06215C" uuid="24a2b9e1-8fe3-4f0e-a578-4a48770d154d">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isItalic="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Thuế GTGT:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="250" width="378" height="30" forecolor="#06215C" uuid="20d5b502-886e-4496-a5cf-d3592414bd77">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isItalic="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Tổng số tiền (bao gồm thuế GTGT):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="290" width="382" height="30" forecolor="#06215C" uuid="658a1dce-94ef-44c9-8ed3-bf38f5c1e5f0">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isItalic="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Thời hạn thanh toán phí bảo hiểm: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="408" width="106" height="30" forecolor="#06215C" uuid="9a6e5494-2255-418a-bad5-a5a75612daa0">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isItalic="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Cấp ngày]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="437" width="390" height="50" forecolor="#002060" uuid="132a4ecc-30c3-4b5e-b504-f74981b3cdcd">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font size="24" isBold="true" isItalic="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[CÔNG TY BẢO HIỂM LIÊN HIỆP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="642" width="570" height="143" forecolor="#000000" uuid="54cf934d-3412-4c5a-a3fe-f62283997f71">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified" verticalAlignment="Bottom">
+					<font size="17" isItalic="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Lưu ý: Trách nhiệm bảo hiểm chỉ phát sinh khi Bên mua bảo hiểm, Người được bảo hiểm đã thanh toán đầy đủ phí bảo hiểm cho UIC: (i) tại ngày cấp GCN bảo hiểm này, hoặc (ii) theo đúng thời hạn thanh toán phí bảo hiểm theo quy định của hợp đồng bảo hiểm hoặc thỏa thuận khác bằng văn bản giữa UIC và Bên mua bảo hiểm, Người được bảo hiểm. ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="15" y="60" width="500" height="30" forecolor="#06215C" uuid="7447d0eb-b302-4ab3-92d5-f9b825935e97"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{THBHTu}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="15" y="105" width="500" height="30" forecolor="#06215C" uuid="9db72e62-b538-4bca-ab9c-f560426f90d5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{THBHDen}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="139" y="210" width="160" height="30" forecolor="#06215C" uuid="6d86257f-38df-4420-be67-5a26f04a2477"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PhiBaoHiem}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="405" y="210" width="170" height="30" forecolor="#06215C" uuid="23f1fb09-37f3-4da1-a1db-f4dd28e82f41"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ThueGTGT}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="332" y="250" width="202" height="30" forecolor="#06215C" uuid="ab7bc46a-3a4a-4789-ae5b-5e96361c7a1c"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TongPhiBaoHiem}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="316" y="290" width="197" height="30" forecolor="#06215C" uuid="fe052afd-e7ee-4b4a-ad73-e124c4079092"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ThoiHanThanhToanPhiBaoHiem}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="102" y="408" width="305" height="30" forecolor="#06215C" uuid="5d66da55-b62e-4309-af8c-599a893ba88c"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NgayCapBaoHiem}]]></textFieldExpression>
+			</textField>
+			<break>
+				<reportElement x="0" y="789" width="100" height="1" uuid="936e08c5-8bb5-4d4f-97ee-0da7e6ee507e"/>
+			</break>
+		</band>
+		<band height="800">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="5" y="5" width="590" height="790" forecolor="#293C57" uuid="d543daf6-f8f1-45e6-ae00-9c6a61a296fe"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="10" y="10" width="580" height="780" backcolor="#FAFAE6" uuid="8b7ce09f-22b4-43b7-bb1a-66bced092174">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Opaque" x="10" y="10" width="580" height="30" forecolor="#FFFFFF" backcolor="#002060" uuid="8ed07deb-880d-4007-949a-5757b8e97697">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[NHỮNG ĐIỀU CẦN LƯU Ý]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="60" width="570" height="730" forecolor="#000000" uuid="5af534bd-c4a0-432f-9054-fa675bd55839">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font size="17" isItalic="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[1. Giấy chứng nhận (GCN) bảo hiểm này được cấp theo Nghị định số 03/2021/NĐ-CP ngày 15 tháng 01 năm 2021 của Chính phủ về bảo hiểm bắt buộc trách nhiệm dân sự của chủ xe cơ giới và Thông tư số 04/2021/TT-BTC ngày 15 tháng 01 năm 2021 của Bộ Tài chính quy định chi tiết một số điều của Nghị định số 03/2021/NĐ-CP.
+Chủ xe/Bên mua bảo hiểm, với việc nhận giấy chứng nhận này xác đã đọc kỹ quy tắc bảo hiểm, điều kiện, điều khoản bảo hiểm, các trường hợp loại trừ bảo hiểm, hợp đồng bảo hiểm khi tham gia bảo hiểm.
+Các Nghị định, Thông tư và biểu phí về bảo hiểm bắt buộc trách nhiệm dân sự của chủ xe cơ giới cũng như các thông tin liên quan đến yêu cầu bồi thường bảo hiểm được đăng tải trên website www.uic.vn
+2. Khi sử dụng xe, chủ xe, lái xe luôn mang theo GCN bảo hiểm này để xuất trình nếu cơ quan có thẩm quyền yêu cầu.
+3. Khi xảy ra tai nạn giao thông, Chủ xe, lái xe phải có trách nhiệm:
+- Áp dụng mọi biện pháp để cứu chữa người và tài sản, bảo vệ hiện trường tai nạn.
+- Báo ngay cho Công ty Bảo hiểm Liên hiệp (UIC) theo số điện thoại 1900545585 và cơ  quan  Công  an  (hoặc chính  quyền  địa phương) nơi gần nhất.
+4. Với việc nhận GCN bảo hiểm này, Bên mua bảo hiểm, Người được bảo hiểm xác nhận đã được giải thích, đã đọc và hiểu rõ toàn bộ điều kiện, điều khoản bảo hiểm, biểu phí bảo hiểm bắt buộc TNDS của chủ xe cơ giới, các quy tắc / điều khoản bảo hiểm khác của UIC (nếu Quý khách có tham gia), các trường hợp loại trừ trách nhiệm bảo hiểm, hợp đồng bảo hiểm, quyền và nghĩa vụ của Bên mua bảo hiểm và Người được bảo hiểm.
+5. Bên mua bảo hiểm, Người được bảo hiểm đồng ý sử dụng thư điện tử (email), số điện thoại đã đăng ký với UIC để nhận các thông báo, tài liệu liên quan từ UIC. Các thông báo đó được coi là bằng văn bản. ]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
